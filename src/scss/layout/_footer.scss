@@ -1,0 +1,33 @@
+.footer {
+    margin-top: 30px;
+
+    .pre-footer {
+        display: flex;
+        width: 100%;
+        height: 515px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url('/images/background-footer.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center bottom;
+
+        span {
+            font-size: 4.5em;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        color: gray;
+        font-size: 14px;
+    }
+}
