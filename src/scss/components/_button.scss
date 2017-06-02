@@ -1,0 +1,17 @@
+.button {
+    height: 45px;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &--dark {
+        background-color: $gray-dark;
+    }
+
+     &--orange {
+        background-color: $orange;
+    }
+}

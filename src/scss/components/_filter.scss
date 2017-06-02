@@ -1,0 +1,26 @@
+.filter {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid $border-color;
+    margin: 20px 0 85px;
+
+    &__title {
+        font-size: 1.125em;
+        font-weight: 700;
+        margin-right: 25px;
+    }
+
+    &__list {
+        display: flex;
+
+        &__item {
+            width: 143px;
+            color: $gray;
+        }
+    }
+
+    &__button {
+        margin-left: auto;
+    }
+}
