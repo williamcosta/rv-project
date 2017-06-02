@@ -1,0 +1,18 @@
+.customize-button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid $border-color;
+    transition: .5s ease-in-out;
+
+    &__icon {
+        margin-right: 5px;
+    }
+
+    &__text {
+        color: $gray;
+        font-size: .75em;
+        text-transform: uppercase;
+        line-height: 1.5;
+    }
+}

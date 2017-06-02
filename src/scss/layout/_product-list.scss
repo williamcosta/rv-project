@@ -1,0 +1,41 @@
+.product-list {
+    display: flex;
+    width: 100%;
+
+    &__item {
+        border: 1px solid white;
+        padding: 30px 50px;
+        transition: all .3s ease-in-out;
+
+        &:not(:last-child) {
+            margin-right: 45px;
+        }
+
+        .product__actions {
+            transition: .5s ease-in-out;
+
+            .button {
+                opacity: 0;
+                transition: .5s ease-in-out;
+            }
+        }
+
+        &:hover {
+            border: 1px solid $border-color;
+
+            .customize-button,
+            .product__infos {
+                transform: translateY(-20px);
+            }
+
+            .product__actions {
+                transform: translateY(-20px);
+
+                .button {
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+}
