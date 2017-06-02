@@ -1,4 +1,10 @@
-body {
-    background-color: red;
-    font-size: 30px;
-}
+@import "settings/colors";
+
+@import "base/reset";
+@import "base/functional";
+
+@import "components/header/logo";
+@import "components/header/navigation";
+@import "components/header/mini-cart";
+
+@import "layout/header";

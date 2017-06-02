@@ -1,0 +1,19 @@
+.nav {
+    .nav__wrapper {
+        display: flex;
+        font-weight: 700;
+
+        .nav__item {
+            transition: all .3s ease-in-out;
+            text-transform: uppercase;
+
+            &:not(:last-child) {
+                margin-right: 35px;
+            }
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}
