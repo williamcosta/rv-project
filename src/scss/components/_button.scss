@@ -16,5 +16,10 @@
 
      &--orange {
         background-color: $orange;
+
+        &:hover {
+            font-size: 14px;
+            background-color: darken($orange, 10);
+        }
     }
 }
