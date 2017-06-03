@@ -1,0 +1,40 @@
+input[type="checkbox"] {
+    width: 0px;
+    height: 0px;
+    font-size: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    appearance: none;
+
+    + label {
+        position: relative;
+        display: inline-block;
+        color: #999;
+        line-height: 1.5;
+        vertical-align: middle;
+        padding-left: 22px;
+
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: -5px;
+            border: 1px solid $gray;
+            background-color: lighten($gray, 17);
+        }
+    }
+
+    &:checked {
+        visibility: hidden;
+
+        + label {
+            &::before {
+                border-color: $orange;
+                background-color: $orange;
+            }
+        }
+    }
+}

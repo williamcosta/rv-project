@@ -17,6 +17,10 @@
         &__item {
             width: 143px;
             color: $gray;
+            
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
         }
     }
 
