@@ -38,10 +38,19 @@
         @media screen and (max-width: 800px) {
             width: 100%;
         }
+
+        @media screen and (max-width: 420px) and (orientation: portrait) {
+            flex-direction: column;
+        }
     }
 
     &__list {
         display: flex;
+
+        @media screen and (max-width: 420px) and (orientation: portrait) {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
 
         &__item {
             width: 143px;
@@ -56,6 +65,15 @@
 
                 &:not(:last-child) {
                     margin-right: 25px;
+                }
+            }
+
+            @media screen and (max-width: 420px) and (orientation: portrait) {
+                width: 50%;
+                margin-bottom:20px;
+
+                &:not(:last-child) {
+                    margin-right: 0;
                 }
             }
         }
