@@ -2,7 +2,12 @@
     width: 70px;
     margin-right: 40px;
 
+    @media screen and (max-width: 420px) and (orientation: portrait) {
+        margin: 0;
+    }
+
     img {
-        width: 100%;
+        width: 70px;
+        height: auto;
     }
 }

@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Nike - Just do it</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="./public/style.css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet" />
     </head>
@@ -12,7 +13,7 @@
                 <a href="#" class="logo" role="logo">
                     <img src="./images/nike-logo.png" alt="Nike - Just do It" />
                 </a>
-                <nav class="nav" role="navigation">
+                <nav class="nav [ hidden--mobile ]" role="navigation">
                     <ul class="nav__wrapper">
                         <li class="nav__item"><a href="#">Masculino</a></li>
                         <li class="nav__item"><a href="#">Feminino</a></li>
@@ -25,31 +26,41 @@
                 </a>
             </div>
         </header>
+        <nav class="nav main-container [ show--mobile hidden--desktop ]" role="navigation">
+            <ul class="nav__wrapper">
+                <li class="nav__item"><a href="#">Masculino</a></li>
+                <li class="nav__item"><a href="#">Feminino</a></li>
+                <li class="nav__item"><a href="#">Menino</a></li>
+                <li class="nav__item"><a href="#">Menina</a></li>
+            </ul>
+        </nav>
         <div class="banner">
             <img src="./images/banner.png" alt="Finish It">
         </div>
         <main class="main-container" role="main">
             <section class="filter">
                 <h4 class="filter__title">Chuteiras HyperVenom:</h4>
-                <ul class="filter__list">
-                    <li class="filter__list__item">
-                        <input type="checkbox" id="high-top" name="high-top" value="" />
-                        <label for="high-top">Cano alto</label>
-                    </li>
-                    <li class="filter__list__item">
-                        <input type="checkbox" id="low-top" name="low-top" value="" />
-                        <label for="low-top">Cano baixo</label>
-                    </li>
-                    <li class="filter__list__item">
-                        <input type="checkbox" id="campo" name="campo" value="" />
-                        <label for="campo">Futebol Campo</label>
-                    </li>
-                    <li class="filter__list__item">
-                        <input type="checkbox" id="society" name="society" value="" />
-                        <label for="society">Futebol Society</label>
-                    </li>
-                </ul>
-                <button type="button" role="button" class="button [ button--dark ] filter__button">Todos os Produtos</button>
+                <div class="filter__wrapper">
+                    <ul class="filter__list">
+                        <li class="filter__list__item">
+                            <input type="checkbox" id="high-top" name="high-top" value="" />
+                            <label for="high-top">Cano alto</label>
+                        </li>
+                        <li class="filter__list__item">
+                            <input type="checkbox" id="low-top" name="low-top" value="" />
+                            <label for="low-top">Cano baixo</label>
+                        </li>
+                        <li class="filter__list__item">
+                            <input type="checkbox" id="campo" name="campo" value="" />
+                            <label for="campo">Futebol Campo</label>
+                        </li>
+                        <li class="filter__list__item">
+                            <input type="checkbox" id="society" name="society" value="" />
+                            <label for="society">Futebol Society</label>
+                        </li>
+                    </ul>
+                    <button type="button" role="button" class="button [ button--dark ] filter__button">Todos os Produtos</button>
+                </div>
             </section>
             <section class="product-grid">
                 <h1 class="product-grid__title">Mais Vendidos</h1>

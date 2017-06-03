@@ -1,3 +1,12 @@
+.product__image {
+    display: inline-block;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .product__infos {
     display: flex;
     flex-direction: column;

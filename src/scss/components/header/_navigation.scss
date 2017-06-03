@@ -1,7 +1,20 @@
 .nav {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 420px) and (orientation: portrait) {
+        height: 50px;
+        background-color: lighten($gray, 10);
+    }
+
     .nav__wrapper {
         display: flex;
         font-weight: 700;
+
+        @media screen and (max-width: 420px) and (orientation: portrait) {
+            width: 100%;
+            justify-content: space-between;
+        }
 
         .nav__item {
             font-size: 14px;
@@ -10,6 +23,12 @@
 
             &:not(:last-child) {
                 margin-right: 35px;
+            }
+
+            @media screen and (max-width: 420px) and (orientation: portrait) {
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
             }
 
             &:hover {

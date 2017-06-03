@@ -1,0 +1,22 @@
+@media screen and (min-width: 420px) {
+    .hidden--desktop {
+        display: none;
+    }
+
+    .show--desktop {
+        display: flex;
+    }
+}
+
+
+
+
+@media screen and (max-width: 420px) and (orientation: portrait) {
+    .hidden--mobile {
+        display: none;
+    }
+
+    .show--mobile {
+        display: flex;
+    }
+}

@@ -2,6 +2,10 @@
     height: 73px;
     background-color: white;
 
+    @media screen and (max-width: 420px) and (orientation: portrait) {
+        height: 55px;
+    }
+
     .header__wrapper {
         display: flex;
         height: 100%;
