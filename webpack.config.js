@@ -4,14 +4,23 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 
 module.exports = {
-    entry: ['./src/app.js', './src/scss/style.scss',],
+    entry: ['./src/app.jsx', './src/scss/style.scss',],
     output: {
         path: path.join(__dirname, 'public/'),
         publicPath: '/public',
         filename: 'bundle.js'
     },
+    devtool: 'source-map',
     module: {
         rules: [
+            {
+                test: /.jsx?$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                query: {
+                    presets: ['react','es2015']
+                }
+            },
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
