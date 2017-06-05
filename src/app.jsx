@@ -4,4 +4,6 @@ import Filter from './components/filter.jsx'
 
 require('./scss/style.scss')
 
-ReactDOM.render(<Filter value="show!"/>, document.getElementById('app'))
+ReactDOM.render(
+    <Filter />
+, document.getElementById('app'))
