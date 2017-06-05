@@ -1,6 +1,6 @@
 import React from 'react'
-import FilterItem from './filterItem.jsx'
-import { ButtonFilter } from './buttonFilter.jsx'
+import FilterItem from './FilterItem.jsx'
+import { ButtonFilter } from './ButtonFilter.jsx'
 
 export default props => (
     <section className="filter">
