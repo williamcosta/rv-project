@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Filter from './components/Filter.jsx'
-import ProductList from './components/ProductList.jsx'
+import ProductSlider from './components/ProductSlider.jsx'
 
 require('./scss/style.scss')
 
 ReactDOM.render(
     <div>
         <Filter />
-        <ProductList listTitle="Mais Vendidos" />
-        <ProductList listTitle="Lançamentos" />
+        <ProductSlider listTitle="Mais Vendidos" listType="best-sellers" />
+        <ProductSlider listTitle="Lançamentos" listType="releases" />
     </div>
 , document.getElementById('app'))
