@@ -14,7 +14,7 @@ export default props => {
                     </a>
                     <div className="product__infos">
                         <h2 className="product__name">{product.title}</h2>
-                        <span className="product__type">{ (product.high-top === true) ? 'Cano Alto' : 'Cano Baixo'}</span>
+                        <span className="product__type">{ (product['high-top'] === true) ? 'Cano Alto' : 'Cano Baixo'}</span>
                         <span className="product__price">R$ {product.price}</span>
                         <span className="product__installments">ou {product.installments.number}X {product.installments.value} sem juros</span>
                     </div>
