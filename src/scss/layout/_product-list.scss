@@ -1,6 +1,7 @@
 .product-list {
     display: flex;
     width: 100%;
+    overflow: hidden;
 
     &__item {
         flex: 1 0 25%;
